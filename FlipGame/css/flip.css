@@ -1,0 +1,212 @@
+/*
+page sizing
+*/
+*
+{
+    box-sizing: border-box;
+}
+
+/*
+html styling
+*/
+html
+{
+    min-height: 100vh;
+}
+
+/*
+body styling
+*/
+
+body
+{
+    background-image:linear-gradient(-125deg,#000000,#2A272A,#4B4A54,#0B2029);
+    background-size: 400%;
+    animation: bganimation 5s infinite;
+}
+
+/*
+text styling
+*/
+
+.gameTitle
+{
+    font-family: Impact, Helvetica, sans-serif;
+    color: #00ffcc;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.gameInfoContainer
+{
+    grid-column: 1 /-1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameInfo
+{
+    font-family: Impact, Helvetica, sans-serif;
+    color: #ff002b;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/*
+card container
+*/
+.gameContainer
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
+    margin: 2em;
+    justify-content: center;
+
+    border-radius: 2px;
+    opacity: 0.85;
+    perspective: 500px;
+}
+
+/*
+cards
+*/
+.card
+{
+    position: relative;
+    background: #ececec;
+    height: 120px;
+    width: 125px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.card.visible .cardBack
+{
+    transform: rotateY(-180deg);
+}
+
+.card.visible .cardFront
+{
+    transform: rotateY(0);
+}
+
+.card.matched .cardValue
+{
+    animation:  dance 1s linear infinite 500ms;
+}
+
+.cardFront
+{
+    transform: rotateY(180deg)
+}
+
+.cardFace
+{
+    position: absolute;
+    height: 100%;
+    widows: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
+}
+
+.backFaceImg
+{
+    height: 120px;
+    width: 125px;
+    border-radius: 2px;
+}
+
+/*
+front face font awesome
+*/
+
+.cardValue
+{
+    padding-left: 50%;
+    font-size: 10vh;
+}
+
+.fa-angry
+{
+    color: #cc1d1d;
+    
+}
+
+.fa-smile-wink
+{
+    color: #fbff00;
+}
+
+.fa-grin-squint-tears
+{
+    color: #15AABF;
+}
+
+.fa-grin-tongue-squint
+{
+    color: #db4b8c;
+}
+
+.fa-surprise
+{
+    color: #FD7E14;
+}
+
+.fa-flushed
+{
+    color: #7f33f1;
+}
+
+
+/*
+Keyframes
+*/
+
+/*
+back ground animation
+*/
+@keyframes bganimation
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+
+    50%
+    {
+        background-position: 100% 50%;
+    }
+
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+
+/*
+matched card dance animation
+*/
+
+@keyframes dance
+{
+    0%, 100%
+    {
+        transform: rotate(0);
+    }
+
+    25%
+    {
+        transform: rotate(30deg);
+    }
+
+    75%
+    {
+        transform: rotate(-30deg);
+    }
+}
