@@ -8,6 +8,7 @@ page sizing
 
 /*
 html styling
+view height
 */
 html
 {
@@ -16,6 +17,7 @@ html
 
 /*
 body styling
+background gradient
 */
 
 body
@@ -54,7 +56,7 @@ text styling
 }
 
 /*
-card container
+card container which has the grid within
 */
 .gameContainer
 {
@@ -71,10 +73,10 @@ card container
 /*
 cards
 */
+
 .card
 {
     position: relative;
-    background: #ececec;
     height: 130px;
     width: 130px;
     margin: 5px;
@@ -127,53 +129,11 @@ cards
 }
 
 /*
-front face font awesome
-*/
-
-.cardValue
-{
-    width: 60%;
-    height: 60%;
-}
-
-.fa-angry
-{
-    color: #cc1d1d;
-    
-}
-
-.fa-smile-wink
-{
-    color: #fbff00;
-}
-
-.fa-grin-squint-tears
-{
-    color: #15AABF;
-}
-
-.fa-grin-tongue-squint
-{
-    color: #db4b8c;
-}
-
-.fa-surprise
-{
-    color: #FD7E14;
-}
-
-.fa-flushed
-{
-    color: #7f33f1;
-}
-
-
-/*
 Keyframes
 */
 
 /*
-card background rainbow
+card background rainbow animation
 */
 
 @keyframes rainbow
@@ -195,7 +155,7 @@ card background rainbow
 }
 
 /*
-back ground animation
+background animation
 */
 @keyframes bganimation
 {
