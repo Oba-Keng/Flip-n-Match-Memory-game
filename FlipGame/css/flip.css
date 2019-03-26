@@ -20,7 +20,11 @@ body styling
 
 body
 {
+<<<<<<< HEAD
     background-image:linear-gradient(-125deg,#000000,#0c0f0c,#0a0e0d,#110e0e,#130e14,#000000);
+=======
+    background-image:linear-gradient(-125deg,#000000,#2A272A,#4B4A54,#0B2029);
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
     background-size: 400%;
     animation: bganimation 5s infinite;
 }
@@ -32,9 +36,15 @@ text styling
 .gameTitle
 {
     font-family: Impact, Helvetica, sans-serif;
+<<<<<<< HEAD
     color: #00ff80;
     text-align: center;
     font-size: 50px;
+=======
+    color: #00ffcc;
+    text-align: center;
+    font-size: 30px;
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
     font-weight: bolder;
 }
 
@@ -48,7 +58,11 @@ text styling
 .gameInfo
 {
     font-family: Impact, Helvetica, sans-serif;
+<<<<<<< HEAD
     color: #ffffff;
+=======
+    color: #ff002b;
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
     font-size: 25px;
     font-weight: bolder;
 }
@@ -63,6 +77,10 @@ card container
     grid-gap: 1em;
     margin: 2em;
     justify-content: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
     border-radius: 2px;
     opacity: 0.85;
     perspective: 500px;
@@ -75,6 +93,7 @@ cards
 {
     position: relative;
     background: #ececec;
+<<<<<<< HEAD
     height: 130px;
     width: 130px;
     margin: 5px;
@@ -83,6 +102,13 @@ cards
     background-image: linear-gradient(-125deg,#14ffe9, #ffeb3b, #ff00e0);
     animation: rainbow 5s linear infinite;
     background-size: 400%;
+=======
+    height: 120px;
+    width: 125px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
 }
 
 .card.visible .cardBack
@@ -102,15 +128,23 @@ cards
 
 .cardFront
 {
+<<<<<<< HEAD
     transform: rotateY(180deg);
     padding:15%;
+=======
+    transform: rotateY(180deg)
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
 }
 
 .cardFace
 {
     position: absolute;
     height: 100%;
+<<<<<<< HEAD
     width: 100%;
+=======
+    widows: 100%;
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,10 +154,16 @@ cards
 
 .backFaceImg
 {
+<<<<<<< HEAD
     height: 130px;
     width: 130px;
     border-radius: 1%;
     border: 5px #beffef solid;
+=======
+    height: 120px;
+    width: 125px;
+    border-radius: 2px;
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
 }
 
 /*
@@ -132,8 +172,13 @@ front face font awesome
 
 .cardValue
 {
+<<<<<<< HEAD
     width: 60%;
     height: 60%;
+=======
+    padding-left: 50%;
+    font-size: 10vh;
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
 }
 
 .fa-angry
@@ -173,6 +218,7 @@ Keyframes
 */
 
 /*
+<<<<<<< HEAD
 card background rainbow
 */
 
@@ -195,6 +241,8 @@ card background rainbow
 }
 
 /*
+=======
+>>>>>>> 81ff2f69c4362234fdb283df6491560adf44337e
 back ground animation
 */
 @keyframes bganimation
